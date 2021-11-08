@@ -1,0 +1,66 @@
+body{
+    margin: 0;
+    border: 0;
+    display: grid;
+    width: 100%;
+    height: 100vh;
+    grid-template-rows: 10vh 10vh 60vh 20vh;
+    grid-template-columns: 20vw 20vw 20vw 20vw 20vw;
+    grid-template-areas: "header header header header header"
+    ". . . . ."
+    ". one two three ."
+    ". . . . .";
+    background-color: #e2c58d;
+}
+.header{
+    grid-area: header;
+    background:white;
+    text-align: center;
+}
+
+.style{
+    width: 10vw;
+    height: 100%;
+}
+
+.card_styling{
+    text-align: center;
+    justify-content: center;
+    font-family: 'Lexend Deca', sans-serif;
+    padding-top: 13rem;
+    box-sizing: border-box;
+    border-radius: 1.5rem 1.5rem 1.5rem 1.5rem;
+}
+
+.link_container1{
+    grid-area: one;
+    background: #4e4d49;
+}
+.link_container2{
+    grid-area: two;
+    background: #725e45;
+}
+
+.link_container3{
+    grid-area: three;
+    background:#b7946a;
+}
+
+.styling{
+    font-family: 'Lexend Deca', sans-serif;
+    padding: 0.25rem;
+    font-size: 4rem;
+    color: rgb(199, 199, 199);
+    text-decoration-color: transparent;
+    transition: text-decoration-color;
+    transition: border 1s;
+    transition: color 0.5s;
+}
+
+.styling:hover{
+    text-decoration-color: solid white;
+    color:white;
+    transition: border 0.5s;
+    transition: color 0.5s;
+}
+
